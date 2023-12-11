@@ -86,6 +86,6 @@ class GoppaCode:
         # Using Gaussian Elimination to create an identity matrix in all columns but the last
         I_m = GF2(system_to_solve).row_reduce(ncols=k)
 
-        # Only looking at the first k columns, the system is now in form (I | m^T) so the message can easily be received
+        # Only looking at the first k rows, the system is now in form (I | m^T) so the message can easily be received
         return np.array(I_m[:k, -1].T)
 

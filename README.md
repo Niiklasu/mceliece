@@ -20,7 +20,7 @@ Lastly some math functions are implemented in the `mceliece.py` file. The source
 ## Sources
 My initial inspiration was [this](https://github.com/jkrauze/mceliece) repository, which already implements the McEliece cryptosystem in python. 
 
-I mainly used [this](https://surface.syr.edu/cgi/viewcontent.cgi?article=1846&context=honors_capstone) paper to study the cryptosystem. The example given is very helpful, even though it contains some minor mistakes.
+I mainly used [this](https://surface.syr.edu/cgi/viewcontent.cgi?article=1846&context=honors_capstone) paper to study the cryptosystem. The example given is very helpful, even though it contains some minor mistakes in the example calculated in section 2.6. If you want to verify the results, the X matrix of the parity-check matrix is computed with the goppa polynomial $g(x) = x^2 + \alpha^7x+1$, while the polynomial used for the Z matrix and any following computation is $g(x) = x^2+x+\alpha^3$.
 
 A great resource for the Goppa Code and Patterson Algorithm is [this](https://cr.yp.to/codes/goppalist-20081107.pdf) paper. You can verify the results given in the example with this code. 
 
